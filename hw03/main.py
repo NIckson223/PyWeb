@@ -74,7 +74,7 @@ def scanning(folder: Path) -> None:
         logging.debug(f"End scanning folder: {item}")
 
     for item in folder.iterdir():
-        th = Thread(target=scan,args=item,)
+        th = Thread(target=scan,args=(item,))
         
 
 
